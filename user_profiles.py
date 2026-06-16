@@ -17,6 +17,3 @@ def random_evs():
             np.random.choice(["Eco", "Flex", "Express"], p=(0.5,0.3,0.2)), # user_pref
             np.random.choice([False, True], p=(0.7, 0.3))) # v2g
     return ev_dict
-
-
-# ev_id, current_soc, target_soc, battery_cap, arrival, departure, user_pref, v2g
