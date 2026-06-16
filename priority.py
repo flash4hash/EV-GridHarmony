@@ -1,0 +1,1 @@
+# Priority Score = User Tier + Urgency + Fairness Credits
