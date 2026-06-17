@@ -1,4 +1,3 @@
-# Priority Score = User Tier + Urgency + Fairness Credits
 from config import user_tier
 
 def time_remaining(ev, current_hour):
