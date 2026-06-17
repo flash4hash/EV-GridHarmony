@@ -4,6 +4,8 @@ import config as cf
 
 def random_evs():
     ev_dict = {}
+
+    # Fixed seed so same random EVs are generated every run
     np.random.seed(101)
 
     for i in range(cf.number_of_evs):
@@ -15,5 +17,8 @@ def random_evs():
             np.random.randint(12,24), # arrival
             np.random.randint(5,12), # departure
             np.random.choice(["Eco", "Flex", "Express"], p=(0.5,0.3,0.2)), # user_pref
-            np.random.choice([False, True], p=(0.7, 0.3))) # v2g
+            np.random.choice([False, True], p=(0.7, 0.3)) # v2g
+        )
+
+    # Dictionary containing all EV objects
     return ev_dict
