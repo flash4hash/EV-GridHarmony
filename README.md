@@ -15,12 +15,12 @@ This project simulates a smart electric vehicle (EV) charging system for a resid
 ## Features
 
 * Random EV profile generation
-* 24-hour charging simulation
+* 24-hour charging schedule generation
 * Priority-based scheduling algorithm
 * Transformer capacity constraint
 * Eco, Flex and Express user categories
 * Incentive-based charging cost calculation
-* Charging performance summary
+* Simulation summary and charging statistics
 
 ## Project Structure
 
@@ -38,8 +38,9 @@ This project simulates a smart electric vehicle (EV) charging system for a resid
 2. Calculate charging priority for each EV.
 3. Simulate charging over a 24-hour period.
 4. Allocate power while respecting transformer limits.
-5. Calculate charging costs and incentives.
-6. Display charging statistics.
+5. Generate a 24-hour charging schedule for every EV.
+6. Calculate charging costs and incentives.
+7. Display simulation statistics and sample charging schedules.
 
 ## Future Improvements
 

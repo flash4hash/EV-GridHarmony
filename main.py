@@ -33,6 +33,11 @@ print(f"Transformer Utilization  : {utilization:.2f}%")
 print(f"Average Energy/EV        : {total_energy/len(results):.2f} kWh")
 print(f"Average Charging Cost    : ${total_cost/len(results):.2f}")
 
+print("\n========== CHARGING SCHEDULE (EV 1) ==========")
+
+for hour, energy in schedule[1].items():
+    print(f"Hour {hour:02d}: {energy:.2f} kWh")
+
 print("\n============ SAMPLE RESULTS ============")
 
 for ev_id in range(1, 6):
@@ -49,3 +54,10 @@ for ev_id in range(1, 6):
     print(f"Remaining Energy  : {res['remaining_energy']:.2f} kWh")
     print(f"Charging Cost     : ${res['final_cost']:.2f}")
     print(f"Status            : {'Fully Charged' if res['fully_charged'] else 'Partially Charged'}")
+
+    charging_schedule = []
+
+    for hour, energy in schedule[ev_id].items():
+        charging_schedule.append(f"{hour:02d}:{energy:g}")
+    
+    print(f"Charging Schedule : [{', '.join(charging_schedule)}]")
