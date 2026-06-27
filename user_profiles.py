@@ -11,8 +11,8 @@ def random_evs():
     for i in range(cf.number_of_evs):
         ev_dict[i+1] = EV(
             i+1, # id
-            round(np.random.uniform(0.10, 0.80), 2), # current_soc
-            round(np.random.uniform(0.80, 1.00), 2), # target_soc
+            round(np.random.uniform(0.20, 0.80), 2), # current_soc
+            round(np.random.uniform(0.75, 1.00), 2), # target_soc
             np.random.randint(8,19)*5, # battery_cap
             np.random.randint(12,24), # arrival
             np.random.randint(5,12), # departure
