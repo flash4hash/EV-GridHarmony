@@ -1,5 +1,7 @@
 # Smart EV Charging Optimization
 
+A Python based simulation for optimizing Electric Vehicle (EV) charging in residential communities while respecting transformer constraints and user priorities.
+
 ## Overview
 
 This project simulates a smart electric vehicle (EV) charging system for a residential community. The objective is to allocate limited charging power efficiently while respecting transformer capacity constraints and considering different user priorities.
@@ -9,17 +11,17 @@ This project simulates a smart electric vehicle (EV) charging system for a resid
 * Prevent transformer overloading.
 * Allocate charging power fairly among EVs.
 * Prioritize urgent charging requests.
-* Apply user-based incentives through charging discounts.
+* Apply user based incentives through charging discounts.
 * Generate charging statistics for analysis.
 
 ## Features
 
 * Random EV profile generation
 * 24-hour charging schedule generation
-* Priority-based scheduling algorithm
+* Priority based scheduling algorithm
 * Transformer capacity constraint
 * Eco, Flex and Express user categories
-* Incentive-based charging cost calculation
+* Incentive based charging cost calculation
 * Simulation summary and charging statistics
 
 ## Project Structure
@@ -31,6 +33,35 @@ This project simulates a smart electric vehicle (EV) charging system for a resid
 * `optimization.py` - Smart charging algorithm
 * `results.py` - Billing and simulation statistics
 * `main.py` - Program execution
+
+## How to Run
+
+### Requirements
+
+* Python 3.x
+* NumPy
+
+### Installation
+
+```bash
+git clone <repository-url>
+cd EV-GridHarmony
+pip install numpy
+```
+
+### Run
+
+```bash
+python main.py
+```
+
+The program will:
+
+* Generate random EV profiles.
+* Simulate charging over 24 hours.
+* Generate charging schedules.
+* Display the simulation summary and sample EV results.
+
 
 ## Simulation Workflow
 
