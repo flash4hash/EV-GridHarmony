@@ -33,11 +33,6 @@ print(f"Transformer Utilization  : {utilization:.2f}%")
 print(f"Average Energy/EV        : {total_energy/len(results):.2f} kWh")
 print(f"Average Charging Cost    : ${total_cost/len(results):.2f}")
 
-print("\n========== CHARGING SCHEDULE (EV 1) ==========")
-
-for hour, energy in schedule[1].items():
-    print(f"Hour {hour:02d}: {energy:.2f} kWh")
-
 print("\n============ SAMPLE RESULTS ============")
 
 for ev_id in range(1, 6):
@@ -59,5 +54,5 @@ for ev_id in range(1, 6):
 
     for hour, energy in schedule[ev_id].items():
         charging_schedule.append(f"{hour:02d}:{energy:g}")
-    
+
     print(f"Charging Schedule : [{', '.join(charging_schedule)}]")
